@@ -1,0 +1,24 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lauraj3005/test-project.git",
+  "author": "lauraj3005 <laurajohnson3005@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.5.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
