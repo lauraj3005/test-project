@@ -1,6 +1,7 @@
 {
   "shows": [
     {
+      "ID": "MT01",
       "name": "Les Miserable",
       "isWatched": true,
       "rating": "5",
@@ -9,6 +10,7 @@
       "timesSeen": 3
     },
     {
+      "ID": "MT02",
       "name": "Bugsy Malone",
       "isWatched": true,
       "rating": "1",
@@ -17,6 +19,7 @@
       "timesSeen": 1
     },
     {
+      "ID": "MT03",
       "name": "Moulin Rouge",
       "isWatched": false,
       "rating": "",
@@ -25,6 +28,7 @@
       "timesSeen": 0
     },
     {
+      "ID": "MT04",
       "name": "SIX",
       "isWatched": true,
       "rating": "4.5",
@@ -33,6 +37,7 @@
       "timesSeen": 1
     },
     {
+      "ID": "MT05",
       "name": "Cabaret",
       "isWatched": false,
       "rating": "",
@@ -41,6 +46,7 @@
       "timesSeen": 0
     },
     {
+      "ID": "MT06",
       "name": "Hadestown",
       "isWatched": false,
       "rating": "",
