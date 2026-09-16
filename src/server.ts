@@ -1,6 +1,6 @@
 import express from 'express';
 import { type Request, type Response } from 'express';
-import musicals from './data/';
+import musicals from './data/data.json';
 
 const app = express();
 
