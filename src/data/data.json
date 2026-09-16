@@ -1,0 +1,67 @@
+{
+  "shows": [
+  {
+    "name": "Les Miserable",
+    "isWatched": true,
+    "rating": "5",
+    "review": "BEST MUSICAL EVER",
+    "writtenBy": [
+      "Claude-Michel Schönberg",
+      "Alain Boublil"
+    ],
+    "timesSeen": 3
+  },
+  {
+    "name": "Bugsy Malone",
+    "isWatched": true,
+    "rating": "1",
+    "review": "The only thing gangster about it is how it robbed 2 hours of my life. If I could give it 0 stars I would.",
+    "writtenBy": [
+      "Alan Parker",
+      "Paul Williams"
+    ],
+    "timesSeen": 1
+  },
+  {
+    "name": "Moulin Rouge",
+    "isWatched": false,
+    "rating": "",
+    "review": "",
+    "writtenBy": "John Logan",
+    "timesSeen": 0
+  },
+  {
+    "name": "SIX",
+    "isWatched": true,
+    "rating": "4.5",
+    "review": "very good!!",
+    "writtenBy": [
+      "Lucy Moss",
+      "Toby Marlow"
+    ],
+    "timesSeen": 1
+  },
+  {
+    "name": "Cabaret",
+    "isWatched": false,
+    "rating": "",
+    "review": "",
+    "writtenBy": [
+      "John Masteroff",
+      "John Kander",
+      "Fred Ebb"
+    ],
+    "timesSeen": 0
+  },
+  {
+    "name": "Hadestown",
+    "isWatched": false,
+    "rating": "",
+    "review": "",
+    "writtenBy": [
+      "Anaïs Mitchell"
+    ],
+    "timesSeen": 0
+  }
+]
+}
