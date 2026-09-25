@@ -15,8 +15,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "tsx watch src/server.ts"
+    "start": "node dist/lesson-02.ts",
+    "dev": "tsx watch src/lesson-02.ts"
   },
   "dependencies": {
     "express": "^5.2.1"
