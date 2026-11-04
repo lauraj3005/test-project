@@ -8,15 +8,20 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.5.0",
+    "@types/supertest": "^7.2.1",
     "nodemon": "^3.1.14",
+    "supertest": "^7.3.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.23.13",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/lesson-02.ts",
-    "dev": "tsx watch src/lesson-02.ts"
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "npx vitest"
   },
   "dependencies": {
     "express": "^5.2.1"

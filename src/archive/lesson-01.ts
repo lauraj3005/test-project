@@ -11,7 +11,8 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.get('/watched', (req: Request, res: Response) => {
- res.send(musicals.shows.filter((watched) => watched.isWatched))
+  res.send(musicals.shows.filter((watched) => watched.isWatched === true))
+  // res.send(musicals.shows.filter((watched) => watched.isWatched)) this is the same as above, less code because isWatched is a boolean and true it's a truthy
   }
 )
 
