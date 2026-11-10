@@ -21,17 +21,30 @@ app.get('/shows/:id', (req: Request, res: Response) => {
   }
 })
 
+// app.delete('/shows/:id', (req: Request, res: Response) => {
+//   const showId = req.params.id as string
+//   const query = database.prepare('DELETE FROM Shows WHERE id = ?'); 
+//   query.all(showId)
+//   const search = database.prepare('Select * FROM Shows WHERE id = ?'); 
+//   const result = search.get(showId)
+//   console.log(result)
+//   if (result) {
+//     res.status(500).send('Show could not be deleted')
+//   } else {
+//     res.sendStatus(200)
+//   }
+// })
+
 app.delete('/shows/:id', (req: Request, res: Response) => {
   const showId = req.params.id as string
-  const query = database.prepare('DELETE FROM Shows WHERE id = ?'); 
-  query.all(showId)
-  const search = database.prepare('Select * FROM Shows WHERE id = ?'); 
-  const result = search.get(showId)
-  console.log(result)
-  if (result) {
-    res.status(500).send('Show could not be deleted')
+  const search = database.prepare('Select * FROM Shows Where id = ?')
+  const deleteShow = database.prepare('DELETE FROM Shows Where id = ?')
+  const searchme = search.all(showId) // searches the DB specifically for the showId sent in the url
+  if (searchme.length < 1) {
+    return res.status(404).send('not found')
   } else {
-    res.sendStatus(200)
+    deleteShow.all(showId)
+    return res.send(200)
   }
 })
 
