@@ -13,10 +13,11 @@ app.get('/shows', (req: Request, res: Response) => {
 
 app.get('/shows/:id', (req: Request, res: Response) => {
   const query = database.prepare('SELECT * FROM Shows WHERE id = ?');
-  if (req.params.id) {
-  res.send(query.get(req.params.id as string))
+  const show = query.get(req.params.id as string)
+  if (!show) {
+    return res.sendStatus(404)
   } else {
-    res.sendStatus(404)
+    return res.send(show)
   }
 })
 
