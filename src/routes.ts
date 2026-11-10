@@ -21,20 +21,6 @@ app.get('/shows/:id', (req: Request, res: Response) => {
   }
 })
 
-// app.delete('/shows/:id', (req: Request, res: Response) => {
-//   const showId = req.params.id as string
-//   const query = database.prepare('DELETE FROM Shows WHERE id = ?'); 
-//   query.all(showId)
-//   const search = database.prepare('Select * FROM Shows WHERE id = ?'); 
-//   const result = search.get(showId)
-//   console.log(result)
-//   if (result) {
-//     res.status(500).send('Show could not be deleted')
-//   } else {
-//     res.sendStatus(200)
-//   }
-// })
-
 app.delete('/shows/:id', (req: Request, res: Response) => {
   const showId = req.params.id as string
   const search = database.prepare('Select * FROM Shows Where id = ?')
