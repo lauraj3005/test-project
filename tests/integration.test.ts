@@ -121,7 +121,8 @@ describe("Musicals API", () => {
         const res = await request(app).delete('/shows/1').set('Content-Type', 'application/json').set('Accept', 'application/json');
         expect(res.status).toEqual(200)
         const resForGet = await request(app).get("/shows/1").set('Content-Type', 'application/json').set('Accept', 'application/json');
-        expect(resForGet).toBe(404)
+        console.log(resForGet, 'here i am')
+        expect(resForGet.status).toEqual(404)
     })
 
   // it("should return the correct properties", async () => {
